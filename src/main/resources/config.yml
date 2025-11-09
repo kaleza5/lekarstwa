@@ -1,0 +1,65 @@
+# MedicalCraft default configuration
+
+# Custom model data IDs for medical items (link these to your resource pack overrides)
+custom_model_data:
+  ibuprofen: 10001
+  paracetamol: 10002
+  morphine: 10003
+  amoxicillin: 10004
+  penicillin: 10005
+  tetracycline: 10006
+  acyclovir: 10007
+  oseltamivir: 10008
+  nystatin: 10009
+  clotrimazole: 10010
+  ivermectin: 10011
+  metronidazole: 10012
+  prednisone: 10013
+  dexamethasone: 10014
+  bandage_small: 10015
+  bandage_large: 10016
+  gauze_pad: 10017
+  adhesive_bandage: 10018
+  elastic_bandage: 10019
+  thermometer: 10020
+  stethoscope: 10021
+  blood_pressure_cuff: 10022
+  otoscope: 10023
+  ophthalmoscope: 10024
+  scalpel: 10025
+  surgical_needle: 10026
+  surgical_thread: 10027
+  surgical_gloves: 10028
+  surgical_mask: 10029
+  epipen: 10030
+  defibrillator: 10031
+  oxygen_mask: 10032
+  iv_bag: 10033
+  iv_set: 10034
+  test_strip: 10035
+  urine_cup: 10036
+  blood_tube: 10037
+  glucometer: 10038
+  pregnancy_test: 10039
+  thermometer_digital: 10040
+  blood_pressure_monitor: 10041
+  pulse_oximeter: 10042
+  stethoscope_pediatric: 10043
+  otoscope_pediatric: 10044
+  insulin: 10045
+  epinephrine: 10046
+  atropine: 10047
+  digoxin: 10048
+  furosemide: 10049
+  potassium_chloride: 10050
+  sodium_bicarbonate: 10051
+  calcium_gluconate: 10052
+  magnesium_sulfate: 10053
+  dextrose: 10054
+
+# Gameplay settings
+settings:
+  # Infected animals drop less meat; healthy ones drop normal meat
+  infected_meat_multiplier: 0.2
+  # Minimum meat drop when animal was infected (if original drop > 0)
+  infected_meat_minimum: 1

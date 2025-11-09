@@ -1,0 +1,78 @@
+name: MedicalCraft
+version: '1.0.0'
+main: com.medicalcraft.MedicalCraftPlugin
+api-version: '1.20'
+author: MedicalCraft Team
+description: Advanced medical plugin with animal diseases, syringes, microscopes and 50+ medical items
+website: https://medicalcraft.com
+
+commands:
+  med:
+    description: Main medical command for accessing all medical items
+    usage: /med [item/category]
+    aliases: [medical, medicine]
+  
+  syringe:
+    description: Use syringe on animals
+    usage: /syringe [collect/inject]
+    
+  microscope:
+    description: Analyze blood samples
+    usage: /microscope
+    
+  vaccine:
+    description: Create vaccines for animals
+    usage: /vaccine [type]
+
+permissions:
+  medicalcraft.*:
+    description: All MedicalCraft permissions
+    default: op
+    children:
+      medicalcraft.use.*: true
+      medicalcraft.admin.*: true
+      
+  medicalcraft.use.*:
+    description: All user permissions
+    default: true
+    children:
+      medicalcraft.use.syringe: true
+      medicalcraft.use.microscope: true
+      medicalcraft.use.vaccine: true
+      medicalcraft.use.med: true
+      
+  medicalcraft.admin.*:
+    description: All admin permissions
+    default: op
+    children:
+      medicalcraft.admin.give: true
+      medicalcraft.admin.cure: true
+      medicalcraft.admin.infect: true
+      
+  medicalcraft.use.med:
+    description: Access medical items via /med command
+    default: true
+    
+  medicalcraft.use.syringe:
+    description: Use syringe on animals
+    default: true
+    
+  medicalcraft.use.microscope:
+    description: Use microscope to analyze samples
+    default: true
+    
+  medicalcraft.use.vaccine:
+    description: Create and use vaccines
+    default: true
+    
+  medicalcraft.admin.give:
+    description: Give medical items to players
+    default: op
+    
+  medicalcraft.admin.cure:
+    description: Cure animals instantly
+    default: op
+    
+  medicalcraft.admin.infect:
+    description: Infect animals with diseases
+    default: op
